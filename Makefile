@@ -15,7 +15,7 @@ VOLUMES=-v ${PWD}:/home/root/project/ \
 .ONESHELL:
 
 run: 
-	docker run --rm -it --network="my-network"\
+	docker run --rm -it \
 		${VOLUMES} \
 		${IMAGE_NAME}:${IMAGE_VERSION}
 

@@ -69,4 +69,4 @@ RUN cmake -DBUILD_PYTHON=ON \
 RUN sed -ie 's/set(AMPERE "80 86")/#&/g'  ../cmake/Cuda.cmake && \
     sed -ie 's/set(AMPERE "80 86")/#&/g'  ../3rdparty/caffe/cmake/Cuda.cmake
 RUN make -j `nproc`
-WORKDIR /openpose
+WORKDIR /home/root/project/
